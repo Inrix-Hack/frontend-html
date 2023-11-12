@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Route with Stop</title>
+  <style>
+    /* Set the size of the map */
+    #map {
+      height: 800px;
+      width: 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+
+  <div class="App">
+    <header class="App-header">
+      <nav class="navbar">
+        <div class="logo">FuelFocus</div>
+        <div class="menu">
+          <a href="#home" id="home">Home</a>
+          <a href="#features" id="features">Features</a>
+          <a href="#about" id="about">About</a>
+          <a href="#contact" id="contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div></div>
+    <main>
+      <!-- Inputs -->
+      <div class="flex-container">
+        <div class="inputs">
+          <div class="inputs-container">
+            <div class="mpg-container">
+              <label for="mpg-input">Enter your MPG:</label>
+              <input id="mpg-input" class="mpg-input" type="number" placeholder="Miles Per Gallon" value="" />
+            </div>
+
+            <div class="mpg-container">
+              <label for="current-gas-input">Current Gas in Tank:</label>
+              <input id="current-gas-input" class="mpg-input" type="number" placeholder="Gallons" value="" />
+            </div>
+
+            <div class="mpg-container">
+              <label for="fuel-capacity-input">Fuel Capacity:</label>
+              <input id="fuel-capacity-input" class="mpg-input" type="number" placeholder="Gallons" value="" />
+            </div>
+
+            <div class="mpg-container">
+              <label for="fuel-capacity-input">Destination:</label>
+              <input id="destination-input" class="mpg-input" type="text" placeholder="Destination" value="" />
+            </div>
+
+            <div class="mpg-container">
+              <p>Current Location: San Francisco, CA</p>
+            </div>
+
+            <script src="index.js" defer></script>
+
+            <button class="button" onclick="initMap()">Submit</button>
+
+          </div>
+        </div>
+        <!-- Map -->
+        <div class="map-container">
+          <div id="map"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="App-footer">
+      © 2023 FuelFocus, Inc. All rights reserved.
+    </footer>
+  </div>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9NgIZEzxQtvJSUMDOjATnjaoVKcgoXg4&callback=initMap" async defer></script>
+  <script type="text/javascript" src="src/js/index.js"></script>
+
+</body>
+
+</html>

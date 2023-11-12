@@ -1,0 +1,195 @@
+
+#root {
+  background-color: #3f3f3f;
+  padding: 60px;
+  border-radius: 20px;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+p {
+  font-size: 22px;
+}
+/* Base styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+} */
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef2f7; /* Light and modern background color */
+  color: #333;
+  line-height: 1.6;
+}
+
+.division {
+  display: flex;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #1e272e; /* Rich, dark header for contrast */
+  color: #ecf0f1; /* Light text for better readability */
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Menu Link Styles */
+.menu a {
+  background-color: #1e272e; /* Same as header bar */
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* White with slight transparency */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+
+/* Main content styles */
+
+.flex-container {
+  display: flex;
+}
+
+.inputs {
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  padding-top: 1rem;
+  height: 100%;
+}
+
+.inputs-container {
+  /* Take up half the space */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem; /* Add some spacing between the inputs and map */
+}
+
+.map-container {
+  flex-grow: 1; /* Map takes up the remaining space */
+  height: 100vh; /* Map height is full viewport height */
+  margin-left: auto;
+  overflow: auto;
+}
+#map {
+  height: 100%;
+  width: 100%; /* Map width is 100% of the map container */
+}
+
+.mpg-container label {
+  padding-left: 8px;
+  font-size: 1.3rem; /* Larger font size for the label */
+  display: block; /* Makes the label take the full width of the container */
+  margin-bottom: -.6rem; /* Adds a little space between label and input */
+}
+
+.mpg-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #0abde3;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 0.5rem; /* Adds a little space between label and input */
+}
+/* Location Container Styles */
+.location-container {
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  left: 0; /* Align to the left side */
+  bottom: 10%; /* Adjust this value to move up from the very bottom */
+  margin-left: 1rem; /* Adds some space from the left edge */
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #f1f2f6;
+  border: 2px solid #0abde3;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Cards styles */
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none; /* Removing border for a cleaner look */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* More pronounced shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align content for even spacing */
+}
+
+/* Footer styles */
+.App-footer {
+  background-color: #1e272e;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .menu a {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+  }
+}
